@@ -1,6 +1,5 @@
 @host = localhost:8080/auth
-@token = eyJhbGciOiJIUzM4NCJ9... (Replace with real token after login)
-
+@token = eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTc3OTU2MjA5NSwiZXhwIjoxNzc5NjQ4NDk1fQ.dGucy7wywoS9Ijku5XiqevoQe4ZQEbGZiLUt36LZNeiJlLgWx5oCh1CrfJ3sIKR-
 ### 1. Auth: Login
 POST http://{{host}}/api/auth/login
 Content-Type: application/json
