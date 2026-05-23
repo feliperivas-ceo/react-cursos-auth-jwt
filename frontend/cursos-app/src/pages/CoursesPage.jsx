@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import {
   Alert,
   Box,
@@ -16,7 +17,7 @@ import { useAuth } from "../auth/useAuth";
 
 function CoursesPage() {
   const { logout } = useAuth();
-
+const navigate = useNavigate();
   const [courses, setCourses] = useState([]);
   const [error, setError] = useState("");
   const [success, setSuccess] = useState("");
@@ -102,9 +103,9 @@ useEffect(() => {
   }
 
   function handleLogout() {
-    logout();
-    window.location.href = "/login";
-  }
+  logout();
+  navigate("/login");
+}
 
   return (
     <Container maxWidth="md" sx={{ mt: 4, mb: 4 }}>
