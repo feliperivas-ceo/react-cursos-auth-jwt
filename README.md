@@ -9,7 +9,7 @@ El proyecto permite iniciar sesión, almacenar el token en `localStorage`, prote
 
 - Fabio Felipe Murillo - A00401131
 - Juan Esteban Cuéllar - A00402548
-- Luis Cadena Cortes
+- Luis Cadena Cortes - A00395967
 
 ---
 
